@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* ===== Colours ===== */
+
+body {
+    background-color: #8d9096;
+    color: rgb(91, 169, 216);
+    text-align: center;
+}
+
+header {
+    background-color: #17324D;
+    color: white;
+}
+
+a {
+    color: #17324D;
+}
+
+.highlight {
+    color: #E9A23B;
+}
+
+
+
+/* ===== Typography ===== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(38, 50, 56);
+}
+
+
+
+/* ===== Headings ===== */
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #17324D;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-decoration: dotted;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/* ===== Selectors ===== */
+
+/* Element selector */
+p {
+    font-size: 2rem;
+}
+
+
+
+/* class selector */
+.tagline {
+    font-style: calibri;
+    font-size: 1.9rem;
+}
+
+
+/* ID selector */
+contact {
+    color: #17324D;
+    text-decoration: none;
+}
+
+/* Group selector */
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Navigation links */
+nav a {
+    color: #E9A23B;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #17324D;
+}
+
+nav a:focus-visible {
+    color: #E9A23B;
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+.tagline {
+    font-style: italic;
+}
+
+p::first-letter {
+    font-weight: 700;
+}
+
+thead {
+    background-color: #17324D;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E9A23B;
+}
