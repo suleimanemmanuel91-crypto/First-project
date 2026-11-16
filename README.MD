@@ -1,5 +1,5 @@
 ## Description
-This is my first project on GitHub
+This is my first CSS design upload
 
 ## Author
 Suleiman Emmanuel
