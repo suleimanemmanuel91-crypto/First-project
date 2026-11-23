@@ -1,151 +1,177 @@
+
+/* ===== GOOGLE FONT ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-/* ===== Colours ===== */
+/* ===== CSS RESET ===== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
-    background-color: #8d9096;
-    color: rgb(91, 169, 216);
-    text-align: center;
-}
-
-header {
-    background-color: #17324D;
-    color: white;
-}
-
-a {
-    color: #17324D;
-}
-
-.highlight {
-    color: #E9A23B;
+    margin: 0;
 }
 
 
+/* ===== DESIGN VARIABLES ===== */
 
-/* ===== Typography ===== */
+:root {
+    --primary: #17324D;
+    --accent: #E9A23B;
+    --text: rgb(38, 50, 56);
+    --muted: #64748B;
+    --background: #5980ba;
+
+    --radius: 12px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===== BODY ===== */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: rgb(38, 50, 56);
+    text-align: left;
 }
 
 
+/* ===== CONTAINER ===== */
 
-/* ===== Headings ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ===== MY INTERESTS ===== */
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.interest-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    flex: 1 1 250px;
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ===== TYPOGRAPHY ===== */
 
 h1, h2, h3 {
     font-weight: 700;
-    color: #17324D;
+    color: var(--primary);
 }
 
 h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
-    text-decoration: dotted;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.5rem;
 }
 
-
-/* ===== Selectors ===== */
-
-/* Element selector */
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 
+/* ===== LINKS ===== */
 
-/* class selector */
-.tagline {
-    font-style: calibri;
-    font-size: 1.9rem;
-}
-
-
-/* ID selector */
-contact {
-    color: #17324D;
+a {
+    color: var(--primary);
     text-decoration: none;
 }
 
-/* Group selector */
-h1, h2, h3 {
-    font-weight: 700;
+.highlight {
+    color: var(--accent);
 }
 
-/* Navigation links */
-nav a {
-    color: #E9A23B;
+
+
+
+.profile-image {
+    width: 750px;
+    height: 350px;
+    max-width: 500px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+/* ===== PROJECT SUMMARY GRID ===== */
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-8px);
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #00bcd4;
     text-decoration: none;
 }
 
-nav a:hover {
-    color: #17324D;
-}
-
-nav a:focus-visible {
-    color: #E9A23B;
+footer a:hover {
     text-decoration: underline;
 }
 
-
-footer {
-    text-align: center;
+footer .copyright {
+    margin-top: 25px;
+    font-size: 14px;
 }
-
-h2 {
-    text-transform: uppercase;
-}
-
-
-.tagline {
-    font-style: italic;
-}
-
-p::first-letter {
-    font-weight: 700;
-}
-
-thead {
-    background-color: #17324D;
-    color: white;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #E9A23B;
-}
-
-
-
-
-/* Make form labels bold */
-p.ridge {border-style: ridge;}
-form{
-    align-items: left;    
-}
-
-label {
-    font-weight: 700;
-}
-
-
-input:focus {
-    background-color: #E9A23B;
-}
-
-
-input:invalid {
-    color: #17324D;
-}
-

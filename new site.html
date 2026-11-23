@@ -1,99 +1,289 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev site</title>
+    <meta name="description" content="Personal profile website of Suleiman Emmanuel">
 
-    
+    <title>Suleiman Emmanuel | My Profile</title>
+
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
-    <header> 
-        <nav>
-            <ul>
-            <a href= "Home"> </a> 
-            <a href="contact"> </a>
-            <a href = "about"> </a>
-            </ul>
-        </nav>
 
+    <!-- HEADER -->
+    <header>
+        <div class="container header-content">
+
+            <h2 class="logo">Suleiman Emmanuel</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
-    <section id="Me">
-        <h1>About me</h1>
-        <p> My name is Suleiman Emmanuel</p>
-
-    </section>
-
-    <section id="Hobbies">
-
-        <h2>My hobbies are below</h2>
-        <p> i love typing, eating, playing snooker and most importantly sleep</p>
-    </section>
-
-    <section id="Best cars">
-        <h3>List of my cars</h3>
-        <p> <ul> 
-                <li> Toyota </li>
-                <li> Honda </li>
-                <li> Lexus </li>
-
-        </ul></p>
-<p class="tagline">Aspiring Software Developer</p>
 
 
+    <!-- MAIN CONTENT -->
+    <main>
 
-<section id="projects">
-    <h2>My Projects</h2>
+        <!-- HOME / HERO SECTION -->
+        <section id="home" class="container hero">
 
-    <table>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Technology Used</th>
-             
-            </tr>
-        </thead>
+            <img src="images/c10.jpg"
+                 alt="Profile picture of Suleiman Emmanuel"
+                 class="profile-image">
 
-        <tbody>
-            <tr>
-                <td>Personal Profile</td>
-                <td>My personal portfolio website</td>
-                <td>HTML and CSS</td>
-                
-            </tr>
+            <div class="hero-content">
 
-            <tr>
-                <td>Registration Form</td>
-                <td>A form for collecting user details</td>
-                <td>HTML and CSS</td>
-                
-            </tr>
+                <h1>Welcome to My Profile</h1>
 
-            <tr>
-                <td>Church Website</td>
-                <td>A website for a local church</td>
-                <td>HTML, CSS and PHP</td>
-               
-            </tr>
+                <p class="tagline">Aspiring Software Developer</p>
 
-            <tr>
-                <td>Student Management System</td>
-                <td>A system for managing student records</td>
-                <td>PHP and MySQL</td>
-               
-            </tr>
-        </tbody>
-    </table>
+                <p>
+                    Hello! I am Suleiman Emmanuel, a passionate learner
+                    interested in technology, creativity and software development.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT ME -->
+        <section id="about" class="container">
+
+            <div class="about-card">
+
+                <h2>About Me</h2>
+
+                <p>
+                    My name is Suleiman Emmanuel. I am a Software Engineering
+                    student with an interest in web development and building
+                    interactive systems. I enjoy learning new technologies
+                    and improving my programming skills.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+<!-- MY INTERESTS -->
+<section id="interests" class="container">
+
+    <h2>My Interests</h2>
+
+    <div class="interests-container">
+
+        <div class="interest-card">
+            <h3>Technology</h3>
+            <p>I enjoy learning about new technologies and software development.</p>
+        </div>
+
+        <div class="interest-card">
+            <h3>Entrepreneurship</h3>
+            <p>I am interested in business, investments and creating value.</p>
+        </div>
+
+        <div class="interest-card">
+            <h3>Innovation</h3>
+            <p>I love developing creative ideas and building useful systems.</p>
+        </div>
+
+    </div>
+
 </section>
 
+
+
+        <!-- MY SKILLS -->
+        <section id="skills" class="container">
+
+            <h2>My Skills</h2>
+
+            <ul class="skills-list">
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Problem Solving</li>
+                <li>Web Development</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- MY PROJECTS -->
+        <section id="projects" class="container">
+
+            <h2>My Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <h3>My Profile</h3>
+
+                    <p>
+                        A personal profile website created using HTML
+                        and CSS to introduce myself.
+                    </p>
+
+                    <span>Completed</span>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>Registration Form</h3>
+
+                    <p>
+                        A simple registration page designed to collect
+                        users' personal information.
+                    </p>
+
+                    <span>Completed</span>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>Church Website</h3>
+
+                    <p>
+                        A website developed for my church to share
+                        information, events and activities.
+                    </p>
+
+                    <span>In Progress</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+<!-- PROJECT HIGHLIGHTS USING GRID -->
+<section id="project-highlights" class="container">
+
+    <h2>Project Highlights</h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <h3>01</h3>
+            <h4>My Profile</h4>
+            <p>A personal website built with HTML and CSS.</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>02</h3>
+            <h4>Registration Form</h4>
+            <p>A simple form designed to collect user information.</p>
+        </div>
+
+        <div class="summary-card">
+            <h3>03</h3>
+            <h4>Church Website</h4>
+            <p>A website for sharing church information and events.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- PROJECT TABLE -->
+        <section id="project-table" class="container">
+
+            <h2>Project Summary</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>My Profile</td>
+                        <td>A personal profile website</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Registration Form</td>
+                        <td>A simple registration page</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Church Website</td>
+                        <td>A website for my church</td>
+                        <td>In Progress</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER / CONTACT -->
     <footer id="contact">
-        <h4><a href="mailto:Suleimanemmanuel91@gmail.com"> Send a message </a> </h4>
-        <p>Whatsapp number 08022164435</p>
+
+        <div class="container">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                <a href="mailto:Suleimanemmanuel91@gmail.com">
+                    Send me an Email
+                </a>
+            </p>
+
+            <p>
+                WhatsApp:
+                <a href="https://wa.me/2348022164435">
+                    08022164435
+                </a>
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 Suleiman Emmanuel. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
+
 </body>
 </html>
